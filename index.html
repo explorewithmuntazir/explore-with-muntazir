@@ -9,8 +9,8 @@
 <title>Explore with Muntazir | Find the unseen</title>
 <meta property="og:title" content="Explore with Muntazir | Find the unseen"><meta property="og:description" content="Cinematic stories from Kashmir's hidden places, mountains and cycling routes."><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Muntazir","alternateName":"Explore with Muntazir","jobTitle":"Content creator","homeLocation":{"@type":"Place","name":"Kashmir, India"},"sameAs":["https://youtube.com/@explorewithmuntazir6","https://www.instagram.com/explore.with.muntazir/"]}</script>
-<link rel="canonical" href="https://YOUR-DOMAIN.com/">
-<meta property="og:url" content="https://YOUR-DOMAIN.com/"><meta property="og:image" content="https://YOUR-DOMAIN.com/og-image.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="Explore with Muntazir"><meta name="twitter:image" content="https://YOUR-DOMAIN.com/og-image.jpg">
+<link rel="canonical" href="https://explorewithmuntazir.github.io/explore-with-muntazir/">
+<meta property="og:url" content="https://explorewithmuntazir.github.io/explore-with-muntazir/"><meta property="og:image" content="https://explorewithmuntazir.github.io/explore-with-muntazir/og-image.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="Explore with Muntazir"><meta name="twitter:image" content="https://explorewithmuntazir.github.io/explore-with-muntazir/og-image.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%23f2a33a'/%3E%3Ctext x='50' y='72' font-size='64' font-weight='800' text-anchor='middle' font-family='Georgia,serif' fill='%231b1206'%3EE%3C/text%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,800&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
@@ -329,7 +329,7 @@ footer{background:#060e16}
 <header id="hd"><div class="wrap nav">
  <a class="logo" href="#home"><i>E</i>Explore with Muntazir</a>
  <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false">☰</button>
- <nav class="links" id="links"><a href="#story">About</a><a href="#videos">Videos</a><a href="#series">Documentary</a><a href="#explore">Adventures</a><a href="#notes">Gallery</a><a href="#map">Explorer</a><a href="#contact">Contact</a></nav>
+ <nav class="links" id="links"><a href="#story">About</a><a href="#videos">Videos</a><a href="#series">Documentary</a><a href="#explore">Adventures</a><a href="#notes">Gallery</a><a href="#map">Explorer</a><a href="#feedback">Feedback</a><a href="#contact">Contact</a></nav>
  <a class="btn gold" href="https://youtube.com/@explorewithmuntazir6" target="_blank" rel="noopener">Watch on YouTube</a>
 </div></header>
 
@@ -393,14 +393,31 @@ footer{background:#060e16}
   <div class="status"><i></i>In the making. Researching and planning one location at a time.</div>
  </div></div>
  <div class="acts rv"><a class="btn gold" href="https://youtube.com/@explorewithmuntazir6" target="_blank" rel="noopener">Follow the series on YouTube</a></div>
- <div class="notify rv" id="notify">
-  <div class="nt-copy"><p class="sub" style="margin:0 0 10px">NEVER MISS AN EPISODE</p><h3>Be the first to watch<br><em>The Undeekhaa Kashmir.</em></h3><p>Leave your email and I will let you know the moment a new episode or the series launch goes live. No spam, only the story.</p></div>
-  <form class="nt-form" id="notifyForm" novalidate>
-   <label for="nname">Your name <span>(optional)</span></label><input id="nname" name="name" autocomplete="name" maxlength="100" placeholder="Your name">
-   <label for="nemail">Email address</label><input id="nemail" name="email" type="email" autocomplete="email" required maxlength="160" placeholder="you@example.com">
-   <button class="btn gold" type="submit">🔔 Notify me</button>
-   <p class="form-note" id="notifyStatus" role="status">Or <a href="https://youtube.com/@explorewithmuntazir6" target="_blank" rel="noopener" style="color:var(--saffron);font-weight:800">subscribe on YouTube</a> and press the bell.</p>
-  </form>
+ <div class="fbk rv" id="feedback">
+  <div class="fbk-head"><h3>How was<br><em>your visit?</em></h3><p>Rate your visit and leave a comment. Every comment is visible to everyone who visits.</p></div>
+  <div class="fbk-grid">
+   <div class="fbk-rate">
+    <div class="fbk-score"><span id="fb-avg">–</span><small>out of 5</small></div>
+    <div class="fbk-avg" aria-hidden="true">★★★★★<i id="fb-fill">★★★★★</i></div>
+    <p class="fbk-count" id="fb-count">No ratings yet</p>
+    <p class="fbk-lab" id="fb-pick-lab">Your rating</p>
+    <div class="fbk-pick" id="fb-pick" role="radiogroup" aria-labelledby="fb-pick-lab"></div>
+    <p class="fbk-msg" id="fb-rate-msg" role="status" aria-live="polite"></p>
+    <p class="fbk-visits"><b id="fb-visits">–</b> visits to this site</p>
+   </div>
+   <div class="fbk-talk">
+    <form id="fb-form" novalidate>
+     <label for="fb-name">Your name</label>
+     <input id="fb-name" type="text" maxlength="40" autocomplete="name" placeholder="Your name" required>
+     <label for="fb-text">Your comment</label>
+     <textarea id="fb-text" maxlength="500" placeholder="What did you like? What should I add next?" required></textarea>
+     <input class="fbk-hp" type="text" id="fb-site" tabindex="-1" autocomplete="off" aria-hidden="true">
+     <div class="fbk-row"><small><span id="fb-chars">0</span>/500</small><button class="btn gold" id="fb-send" type="submit">Post comment</button></div>
+     <p class="fbk-msg" id="fb-form-msg" role="status" aria-live="polite"></p>
+    </form>
+    <ul class="fbk-list" id="fb-list" aria-label="Visitor comments"></ul>
+   </div>
+  </div>
  </div>
  <div class="eps-h rv"><h3>Episodes</h3></div><div class="eps" id="eps"></div>
 </div></section>
@@ -784,47 +801,169 @@ button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
  });
 })();
 </script>
-<style id="notify-css">
-.notify{margin-top:30px;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,60px);align-items:center;padding:clamp(26px,4.5vw,54px);border-radius:26px;border:1px solid rgba(242,163,58,.4);background:radial-gradient(circle at 90% 0,rgba(242,163,58,.22),transparent 55%),linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.02));box-shadow:0 24px 70px rgba(0,0,0,.28)}
-.notify h3{font-size:clamp(1.9rem,4vw,3rem);line-height:1.02;margin:0 0 14px}
-.notify h3 em{color:var(--saffron);font-weight:500}
-.notify .nt-copy p:last-child{color:#c8d6dc;margin:0;max-width:460px}
-.nt-form{display:flex;flex-direction:column;gap:8px}
-.nt-form label{font-weight:700;font-size:.85rem;color:var(--glacier)}
-.nt-form label span{color:var(--muted);font-weight:500}
-.nt-form input{width:100%;padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:rgba(8,19,31,.7);color:var(--snow);font:inherit}
-.nt-form input:focus{outline:2px solid var(--saffron);outline-offset:2px}
-.nt-form .btn{justify-content:center;margin-top:8px}
-.nt-form .form-note{margin:6px 0 0;font-size:.85rem;color:var(--muted)}
-@media(max-width:900px){.notify{grid-template-columns:1fr}}
+<style id="feedback-css">
+.fbk{margin-top:30px;padding:clamp(26px,4.5vw,54px);border-radius:26px;border:1px solid rgba(242,163,58,.4);background:radial-gradient(circle at 90% 0,rgba(242,163,58,.22),transparent 55%),linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.02));box-shadow:0 24px 70px rgba(0,0,0,.28)}
+.fbk *{box-sizing:border-box}
+.fbk-head h3{font-size:clamp(1.9rem,4vw,3rem);line-height:1.02;margin:0 0 14px}
+.fbk-head h3 em{color:var(--saffron);font-weight:500}
+.fbk-head p{color:#c8d6dc;margin:0;max-width:520px}
+.fbk-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,52px);margin-top:34px;align-items:start}
+.fbk-rate{padding:24px;border-radius:20px;border:1px solid var(--line);background:rgba(8,19,31,.45)}
+.fbk-score{display:flex;align-items:baseline;gap:10px}
+.fbk-score span{font-size:clamp(52px,8vw,78px);font-weight:800;line-height:1;color:var(--saffron);text-shadow:0 0 36px rgba(242,163,58,.4)}
+.fbk-score small{color:var(--muted)}
+.fbk-avg{position:relative;display:inline-block;font-size:24px;letter-spacing:4px;line-height:1;margin:12px 0 6px;color:rgba(255,255,255,.2)}
+.fbk-avg i{position:absolute;inset:0 auto 0 0;width:0;overflow:hidden;white-space:nowrap;font-style:normal;color:var(--saffron);transition:width .6s ease}
+.fbk-count{margin:0 0 20px;color:var(--muted)}
+.fbk-lab{margin:0 0 6px;font-weight:700;color:var(--glacier);font-size:.9rem}
+.fbk-pick{display:flex;gap:2px}
+.fbk-pick button{background:none;border:0;padding:2px 3px;font-size:38px;line-height:1;color:rgba(255,255,255,.22);cursor:pointer;transition:color .15s,transform .15s,text-shadow .15s}
+.fbk-pick button.on{color:var(--saffron);text-shadow:0 0 20px rgba(242,163,58,.45)}
+.fbk-pick button:hover{transform:scale(1.12)}
+.fbk-pick[data-locked="1"] button{cursor:default}
+.fbk-pick[data-locked="1"] button:hover{transform:none}
+.fbk-msg{min-height:1.3em;margin:8px 0 0;font-size:.88rem;color:var(--muted)}
+.fbk-visits{margin:22px 0 0;padding-top:16px;border-top:1px solid var(--line);color:var(--muted)}
+.fbk-visits b{color:var(--snow);font-size:1.5rem;margin-right:4px;font-variant-numeric:tabular-nums}
+.fbk form{display:flex;flex-direction:column;gap:8px}
+.fbk label{font-weight:700;font-size:.85rem;color:var(--glacier)}
+.fbk input[type=text],.fbk textarea{width:100%;padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:rgba(8,19,31,.7);color:var(--snow);font:inherit}
+.fbk textarea{min-height:110px;resize:vertical}
+.fbk input:focus,.fbk textarea:focus,.fbk-pick button:focus-visible{outline:2px solid var(--saffron);outline-offset:2px}
+.fbk-hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
+.fbk-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:4px}
+.fbk-row small{color:var(--muted)}
+.fbk-row .btn:disabled{opacity:.55;cursor:not-allowed;transform:none}
+.fbk-list{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:12px;max-height:480px;overflow:auto}
+.fbk-list li{padding:14px 16px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+.fbk-list .who{display:flex;justify-content:space-between;gap:10px;margin-bottom:6px}
+.fbk-list .who b{color:var(--snow)}
+.fbk-list .who time{color:var(--muted);font-size:.8rem}
+.fbk-list p{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.55;color:#dbe6ea}
+.fbk-list .empty{color:var(--muted);border-style:dashed}
+@media(max-width:900px){.fbk-grid{grid-template-columns:1fr}}
 </style>
-<script id="notify-js">
-(()=>{
- const f=document.getElementById('notifyForm');if(!f)return;
- const st=document.getElementById('notifyStatus'),btn=f.querySelector('button');
- const hp=document.createElement('input');hp.type='checkbox';hp.name='botcheck';hp.tabIndex=-1;hp.setAttribute('aria-hidden','true');hp.style.cssText='position:absolute;left:-9999px;opacity:0;width:0;height:0';f.appendChild(hp);
- f.addEventListener('submit',async e=>{
-  e.preventDefault();
-  const d=new FormData(f);
-  if(d.get('botcheck'))return;
-  const email=String(d.get('email')||'').trim(),name=String(d.get('name')||'').trim();
-  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){st.textContent='Please enter a valid email address.';document.getElementById('nemail').focus();return;}
-  const key=window.WEB3FORMS_KEY||'PASTE';
-  if(key.indexOf('PASTE')===0){
-   st.textContent='Opening your email app. Press Send to join the list.';
-   location.href='mailto:cswithmuntazir@gmail.com?subject='+encodeURIComponent('Notify me: The Undeekhaa Kashmir')+'&body='+encodeURIComponent('Please notify me about new episodes.\nName: '+name+'\nEmail: '+email);
-   return;
+<script type="module" id="feedback-js">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+import { getFirestore, doc, collection, onSnapshot, updateDoc, addDoc, increment, serverTimestamp, query, orderBy, limit } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+/* ---------- PASTE YOUR FIREBASE SETTINGS HERE ---------- */
+const firebaseConfig = {
+  apiKey: "AIzaSyDUISoB67OKZ7YDTbyb-CwOpcWFPkEaZHQ",
+  authDomain: "explore-with-muntazir.firebaseapp.com",
+  projectId: "explore-with-muntazir",
+  appId: "1:287661410078:web:b2b2629b68cd7538a0eb0f"
+};
+/* -------------------------------------------------------- */
+
+const $ = (id) => document.getElementById(id);
+const store = {
+  get(k){ try { return localStorage.getItem(k); } catch { return null; } },
+  set(k,v){ try { localStorage.setItem(k,v); } catch {} }
+};
+const pick = $("fb-pick"), rateMsg = $("fb-rate-msg"), formMsg = $("fb-form-msg");
+const starBtns = [1,2,3,4,5].map((n) => {
+  const b = document.createElement("button");
+  b.type = "button"; b.textContent = "★";
+  b.setAttribute("role","radio"); b.setAttribute("aria-checked","false");
+  b.setAttribute("aria-label", n + (n === 1 ? " star" : " stars"));
+  pick.appendChild(b); return b;
+});
+const paint = (n) => starBtns.forEach((b,i) => b.classList.toggle("on", i < n));
+
+function start(){
+  if (firebaseConfig.apiKey.startsWith("PASTE")) {
+    $("fb-list").innerHTML = '<li class="empty">Feedback is being set up. Please check back soon.</li>';
+    $("fb-send").disabled = true;
+    pick.dataset.locked = "1";
+    return;
   }
-  const label=btn.innerHTML;btn.disabled=true;btn.textContent='Adding you…';
-  try{
-   const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({access_key:key,subject:'New series subscriber: The Undeekhaa Kashmir',from_name:'Explore with Muntazir website',name:name||'Subscriber',email:email,message:'Please notify me about The Undeekhaa Kashmir episodes and launch.'})});
-   const j=await r.json();
-   if(r.ok&&j.success){f.reset();st.textContent='You are on the list! I will email you when the next episode is live.';}
-   else throw new Error(j.message||'failed');
-  }catch(err){st.textContent='Sorry, that did not go through. Please try again, or subscribe on YouTube and press the bell.';}
-  finally{btn.disabled=false;btn.innerHTML=label;}
- });
-})();
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  const statsRef = doc(db, "stats", "site");
+
+  onSnapshot(statsRef, (snap) => {
+    const d = snap.data() || {};
+    const cnt = d.ratingCount || 0;
+    const avg = cnt ? d.ratingSum / cnt : 0;
+    $("fb-avg").textContent = cnt ? avg.toFixed(1) : "–";
+    $("fb-fill").style.width = (avg / 5 * 100) + "%";
+    $("fb-count").textContent = cnt ? cnt + (cnt === 1 ? " rating" : " ratings") : "No ratings yet";
+    $("fb-visits").textContent = (d.visits || 0).toLocaleString("en-IN");
+  });
+
+  const today = new Date().toISOString().slice(0,10);
+  if (store.get("ewm_visit_day") !== today) {
+    store.set("ewm_visit_day", today);
+    updateDoc(statsRef, { visits: increment(1) }).catch(() => {});
+  }
+
+  const mine = parseInt(store.get("ewm_my_rating") || "0", 10);
+  if (mine) { paint(mine); pick.dataset.locked = "1"; rateMsg.textContent = "You rated this site " + mine + " out of 5. Thank you!"; }
+  starBtns.forEach((b, i) => {
+    const n = i + 1;
+    b.addEventListener("mouseenter", () => { if (!pick.dataset.locked) paint(n); });
+    b.addEventListener("focus", () => { if (!pick.dataset.locked) paint(n); });
+    b.addEventListener("click", async () => {
+      if (pick.dataset.locked) return;
+      pick.dataset.locked = "1"; paint(n);
+      b.setAttribute("aria-checked","true");
+      rateMsg.textContent = "Saving your rating…";
+      try {
+        await updateDoc(statsRef, { ratingSum: increment(n), ratingCount: increment(1) });
+        store.set("ewm_my_rating", String(n));
+        rateMsg.textContent = "Thank you! You rated this site " + n + " out of 5.";
+      } catch {
+        delete pick.dataset.locked; paint(0);
+        rateMsg.textContent = "Could not save your rating. Please try again.";
+      }
+    });
+  });
+  pick.addEventListener("mouseleave", () => { if (!pick.dataset.locked) paint(0); });
+
+  const list = $("fb-list");
+  onSnapshot(query(collection(db, "comments"), orderBy("createdAt", "desc"), limit(50)), (snap) => {
+    list.textContent = "";
+    if (snap.empty) {
+      const li = document.createElement("li");
+      li.className = "empty"; li.textContent = "No comments yet. Be the first to write one.";
+      list.appendChild(li); return;
+    }
+    snap.forEach((s) => {
+      const c = s.data();
+      const li = document.createElement("li");
+      const who = document.createElement("div"); who.className = "who";
+      const nm = document.createElement("b"); nm.textContent = c.name || "Visitor";
+      const tm = document.createElement("time");
+      tm.textContent = c.createdAt ? c.createdAt.toDate().toLocaleDateString("en-IN", { day:"numeric", month:"short", year:"numeric" }) : "just now";
+      who.append(nm, tm);
+      const p = document.createElement("p"); p.textContent = c.text || "";
+      li.append(who, p); list.appendChild(li);
+    });
+  });
+
+  $("fb-text").addEventListener("input", (e) => { $("fb-chars").textContent = e.target.value.length; });
+  $("fb-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if ($("fb-site").value) return;
+    const name = $("fb-name").value.trim();
+    const text = $("fb-text").value.trim();
+    if (!name || !text) { formMsg.textContent = "Please enter your name and a comment."; return; }
+    const last = parseInt(store.get("ewm_last_post") || "0", 10);
+    if (Date.now() - last < 30000) { formMsg.textContent = "Please wait a few seconds before posting again."; return; }
+    const btn = $("fb-send"); btn.disabled = true; formMsg.textContent = "Posting…";
+    try {
+      await addDoc(collection(db, "comments"), { name: name.slice(0,40), text: text.slice(0,500), createdAt: serverTimestamp() });
+      store.set("ewm_last_post", String(Date.now()));
+      $("fb-text").value = ""; $("fb-chars").textContent = "0";
+      formMsg.textContent = "Thank you! Your comment is now on the site.";
+    } catch {
+      formMsg.textContent = "Could not post your comment. Please try again.";
+    }
+    btn.disabled = false;
+  });
+}
+start();
 </script>
 <style id="hero-frame-css">
 .hx .hx-c{aspect-ratio:auto!important;max-width:400px!important;width:100%;justify-self:center}
