@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ <meta name="google-site-verification" content="j7J0w0wH1vdHTTSujK2jKHeM-V63M3o5OGk1JnvCubc" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a0b0e">
+<meta name="description" content="Places Muntazir and Fayiz want to explore in Kashmir.">
+<title>Explorer map | Explore with Muntazir</title> <meta property="og:site_name" content="Explore with Muntazir">
+<meta property="og:title" content="Explorer map | Explore with Muntazir"><meta property="og:description" content="Cinematic stories from Kashmir's hidden places, mountains and cycling routes."><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Muntazir","alternateName":"Explore with Muntazir","jobTitle":"Content creator","homeLocation":{"@type":"Place","name":"Kashmir, India"},"sameAs":["https://youtube.com/@explorewithmuntazir6","https://www.instagram.com/explore.with.muntazir/"]}</script>
+<link rel="canonical" href="https://explorewithmuntazir.github.io/explore-with-muntazir/explorer.html">
+<meta property="og:url" content="https://explorewithmuntazir.github.io/explore-with-muntazir/explorer.html"><meta property="og:image" content="https://explorewithmuntazir.github.io/explore-with-muntazir/og-image.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="Explore with Muntazir"><meta name="twitter:image" content="https://explorewithmuntazir.github.io/explore-with-muntazir/og-image.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%23d8b25a'/%3E%3Ctext x='50' y='72' font-size='64' font-weight='800' text-anchor='middle' font-family='Georgia,serif' fill='%231b1206'%3EE%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="inner">
+<div id="bar"></div>
+<header id="hd"><div class="wrap nav">
+ <a class="logo" href="index.html"><i>E</i>Explore with Muntazir</a>
+ <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false">☰</button>
+ <nav class="links" id="links"><a href="index.html">Home</a><a href="about.html">About</a><a href="intro.html">Meet us</a><a href="videos.html">Videos</a><a href="series.html">Documentary</a><a href="gallery.html">Gallery</a><a href="explorer.html" aria-current="page">Explorer</a><a href="contact.html">Contact</a></nav>
+ <a class="btn gold" href="https://youtube.com/@explorewithmuntazir6" target="_blank" rel="noopener">Watch on YouTube</a>
+</div></header>
+<main>
+<section id="map" style="padding-top:20px"><div class="wrap"><div class="head rv"><h2>Where we go next.</h2><p>Places we want to explore. Tap a pin to see what's coming.</p></div><div class="mapw rv"><svg id="mapsvg" viewBox="0 0 960 750" role="img" aria-label="Schematic map of the Kashmir valley with story pins"></svg><aside class="pd" id="pd"></aside></div><p class="note">Schematic map, not to scale.</p></div></section>
+</main>
+<footer><div class="wrap"><div><b>Explore with Muntazir</b><br>Discover the unseen. Tell its story.</div>
+<div class="fl"><a href="about.html">About</a><a href="intro.html">Meet us</a><a href="videos.html">Videos</a><a href="series.html">Documentary</a><a href="gallery.html">Gallery</a><a href="explorer.html">Explorer</a><a href="contact.html">Contact</a></div>
+<div class="fl"><a href="https://youtube.com/@explorewithmuntazir6" target="_blank" rel="noopener">YouTube</a><a href="https://www.instagram.com/explore.with.muntazir/" target="_blank" rel="noopener">Instagram</a><a href="mailto:cswithmuntazir@gmail.com">Email</a></div>
+<div>© <span id="yr"></span> Explore with Muntazir, Kashmir, India<br><small>All videos, photos and posters belong to Explore with Muntazir. Please ask before reusing them.</small></div></div></footer>
+<script>
+
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+$('#yr').textContent=new Date().getFullYear();
+$('#ham').onclick=e=>{const o=$('#links').classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',o)};
+$$('#links a').forEach(a=>a.onclick=()=>$('#links').classList.remove('open'));
+addEventListener('scroll',()=>{const d=document.documentElement;$('#bar').style.transform='scaleX('+(scrollY/(d.scrollHeight-innerHeight||1))+')';$('#hd').classList.toggle('solid',scrollY>40)},{passive:true});
+/* reveal + counters */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');io.unobserve(e.target);e.target.querySelectorAll('[data-n]').forEach(c=>{const n=+c.dataset.n,t0=performance.now();(function f(t){const k=Math.min((t-t0)/1400,1);c.textContent=Math.round(n*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)})(t0)})}),{threshold:.15});
+$$('.rv').forEach(e=>io.observe(e));
+
+</script>
+<script>
+
+(()=>{
+  const menu=document.getElementById('ham');
+  const nav=document.getElementById('links');
+  const topButton=document.createElement('button');
+  topButton.id='backToTop';
+  topButton.type='button';
+  topButton.setAttribute('aria-label','Back to top');
+  topButton.title='Back to top';
+  topButton.textContent='↑';
+  document.body.appendChild(topButton);
+  const closeMenu=()=>{if(!menu||!nav)return;nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open menu');};
+  if(menu&&nav){
+    menu.setAttribute('aria-controls','links');
+    menu.addEventListener('click',()=>{const open=nav.classList.contains('open');menu.setAttribute('aria-label',open?'Close menu':'Open menu');});
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
+    document.addEventListener('click',e=>{if(nav.classList.contains('open')&&!nav.contains(e.target)&&!menu.contains(e.target))closeMenu();});
+  }
+  const updateTop=()=>topButton.classList.toggle('visible',window.scrollY>550);
+  window.addEventListener('scroll',updateTop,{passive:true});
+  updateTop();
+  topButton.addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));
+  // Highlight the current section in the navigation without changing page structure.
+  const navLinks=[...(nav?nav.querySelectorAll('a[href^="#"]'):[])];
+  const targets=navLinks.map(a=>({a,section:document.querySelector(a.getAttribute('href'))})).filter(x=>x.section);
+  if('IntersectionObserver' in window){
+    const activeObserver=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(!entry.isIntersecting)return;
+        targets.forEach(x=>{if(x.section===entry.target)x.a.setAttribute('aria-current','location');else x.a.removeAttribute('aria-current');});
+      });
+    },{rootMargin:'-25% 0px -60% 0px',threshold:0});
+    targets.forEach(x=>activeObserver.observe(x.section));
+  }
+  // Make the image viewer easier to use with keyboards and assistive technology.
+  const lightbox=document.getElementById('lb');
+  if(lightbox){
+    lightbox.setAttribute('role','dialog');
+    lightbox.setAttribute('aria-modal','true');
+    lightbox.setAttribute('aria-label','Photo viewer');
+    const close=document.createElement('button');
+    close.className='lb-close';close.type='button';close.textContent='×';close.setAttribute('aria-label','Close photo viewer');
+    lightbox.appendChild(close);
+    const closeLightbox=()=>{lightbox.hidden=true;};
+    close.addEventListener('click',e=>{e.stopPropagation();closeLightbox();});
+    lightbox.addEventListener('click',closeLightbox);
+    lightbox.querySelector('img')?.addEventListener('click',e=>e.stopPropagation());
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!lightbox.hidden)closeLightbox();});
+  }
+})();
+
+</script>
+<script>
+
+const IMG={"p1": "assets/img-07-5fafa7a9.jpg", "p2": "assets/img-08-fa8e0631.jpg", "p3": "assets/img-09-090e7107.jpg", "p4": "assets/img-10-f12d88bb.jpg", "p6": "assets/img-11-a45041a0.jpg", "p7": "assets/img-12-ec88c8a5.jpg"};
+const CFG={
+ heroBg:'',
+ gallery:[
+  {src:IMG.p2,title:'Rider. Explorer. Nature lover.',place:'Kashmir'},
+  {src:IMG.p6,title:'Exploring Hari Parbat Fort',place:'Srinagar'},
+  {src:IMG.p7,title:'On location',place:'Kashmir'},
+  {src:IMG.p3,title:'Muntazir and Fayiz',place:'The Undeekhaa Kashmir'},
+  {src:IMG.p4,title:'Series coming soon',place:'The Undeekhaa Kashmir'},
+  {src:IMG.p1,title:'A journey you haven\'t seen yet',place:'The Undeekhaa Kashmir'}],
+ episodes:[
+  {n:1,title:'The promo',note:'Promo coming mid November to December',date:'',poster:IMG.p1,url:''}],
+  places:[
+  {name:'Sonamarg',lat:34.30,lng:75.29,tag:'Destination idea',story:'A mountain destination on the creator’s Kashmir list. A full field story will be added after a visit.'},
+  {name:'Gulmarg',lat:34.05,lng:74.38,tag:'Destination idea',story:'A landscape and mountain story to explore. Visit details and original footage will be added when available.'},
+  {name:'Pahalgam',lat:34.02,lng:75.32,tag:'Destination idea',story:'A future nature and valley feature. This page will grow with real experiences and verified information.'},
+  {name:'Srinagar',lat:34.07,lng:74.88,tag:'Destination idea',story:'City stories, heritage, lakes and everyday life. More original field notes will be added over time.'},
+  {name:'Gurez Valley',lat:34.63,lng:74.83,tag:'Up next',story:'A future journey focused on landscapes, local stories and responsible exploration.'},
+  {name:'Lolab Valley',lat:34.52,lng:74.35,tag:'Up next',story:'A future valley story. Details will be added after research and first-hand exploration.'},
+  {name:'Dachigam',lat:34.13,lng:75.03,tag:'Up next',story:'A nature-focused story idea. Any visit will follow park rules and respect wildlife.'},
+  {name:'Aharbal Waterfall',lat:33.65,lng:74.78,tag:'Up next',story:'A future waterfall and landscape feature, with practical details added after verification.'}]
+};
+(()=>{
+const q=s=>document.querySelector(s);
+/* map */
+const NS='http://www.w3.org/2000/svg',M=q('#mapsvg'),X=l=>(l-73.8)/2*960,Y=l=>(34.7-l)/1.3*750;
+const el=(t,a,p)=>{const n=document.createElementNS(NS,t);for(const k in a)n.setAttribute(k,a[k]);(p||M).appendChild(n);return n};
+M.innerHTML='<defs><radialGradient id="vg"><stop offset="0" stop-color="#2f6a82" stop-opacity=".55"/><stop offset="1" stop-color="#2f6a82" stop-opacity="0"/></radialGradient></defs>';
+el('ellipse',{cx:500,cy:380,rx:330,ry:190,fill:'url(#vg)',transform:'rotate(-14 500 380)'});
+for(let k=0;k<16;k++){let d='M0 '+(k*50+10);for(let x=0;x<=960;x+=40)d+=' L'+x+' '+(k*50+10+Math.sin(x/90+k*.8)*22+Math.cos(x/47+k)*9);el('path',{d,fill:'none',stroke:'rgba(207,227,234,.09)','stroke-width':1.4})}
+const jh=[[33.55,75.25],[33.73,75.15],[33.9,74.95],[34.08,74.8],[34.2,74.65],[34.2,74.4]];
+el('path',{d:'M'+jh.map(p=>X(p[1])+' '+Y(p[0])).join(' L'),fill:'none',stroke:'#5aa9c9','stroke-width':3,'stroke-linecap':'round','stroke-linejoin':'round',opacity:.8});
+el('ellipse',{cx:X(74.88),cy:Y(34.12),rx:26,ry:14,fill:'#2a7ea3',opacity:.85});
+[['Pir Panjal range',90,640],['Great Himalayan range',560,120]].forEach(t=>{const n=el('text',{x:t[1],y:t[2],fill:'rgba(207,227,234,.45)','font-size':17,'font-style':'italic','font-family':'Fraunces,serif'});n.textContent=t[0]});
+const PD=q('#pd');let cur=0;
+function show(i){cur=i;const p=CFG.places[i];PD.innerHTML='<small></small><h3></h3><p></p><div class="pl"></div>';
+ PD.querySelector('small').textContent=p.tag||'';PD.querySelector('h3').textContent=p.name;PD.querySelector('p').textContent=p.story;
+ CFG.places.forEach((x,j)=>{const b=document.createElement('button');b.textContent=x.name;b.setAttribute('aria-pressed',j===i);b.onclick=()=>show(j);PD.querySelector('.pl').appendChild(b)})}
+CFG.places.forEach((p,i)=>{const g=el('g',{class:'pin',tabindex:0,role:'button','aria-label':p.name});
+ el('circle',{class:'p',cx:X(p.lng),cy:Y(p.lat),r:8},g);el('circle',{class:'c',cx:X(p.lng),cy:Y(p.lat),r:9},g);
+ const t=el('text',{x:X(p.lng)+16,y:Y(p.lat)+5},g);t.textContent=p.name;
+ g.onclick=()=>show(i);g.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();show(i)}}});
+show(0);
+})();
+</script>
+</body>
+</html>
